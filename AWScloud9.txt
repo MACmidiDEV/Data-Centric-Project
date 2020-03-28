@@ -5,3 +5,22 @@ EC2 default User -FIX
      git config --global user.email "macmidi.webdesigns@gmail.com"
 
 ReBuild VsCode.     
+
+from root DIR 
+  source env/bin/activate 
+  
+
+{
+  "python.pythonPath": "env\\Scripts\\python.exe",
+  "python.terminal.activateEnvironment": true,
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.pylintArgs": ["--load-plugins=pylint_flask"],
+  "files.autoSave": "onFocusChange",
+  "terminal.integrated.env.windows": {
+    "SECRET_KEY": "c822vltgijo71ybzx1npe3",
+    "DEV": "1",
+    "HOSTNAME": "0.0.0.0",
+    "MONGO_URI": "YOUR MONGO URI GOES HERE"
+  }
+}
