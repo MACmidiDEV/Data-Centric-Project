@@ -1,0 +1,23 @@
+[   
+    {
+        "letter": "A",
+        "url": "toodlerLearn_a",
+        "image": "https://github.com/MACmidiDEV/Data-Centric-Project/blob/master/toBuild.png?raw=true",
+        "video": "https://www.youtube.com/embed/itqkIDVDC0g",
+        "description": "Apples are a fruit that you eat"
+    } ,
+    {
+        "letter": "B",
+        "url": "toodlerLearn_b",
+        "image": "https://github.com/MACmidiDEV/Data-Centric-Project/blob/master/toBuild.png?raw=true",
+        "video": "https://www.youtube.com/embed/itqkIDVDC0g",
+        "description": "Boats can travel on water"
+    } ,
+    {
+        "letter": "C",
+        "url": "toodlerLearn_c",
+        "image": "https://github.com/MACmidiDEV/Data-Centric-Project/blob/master/toBuild.png?raw=true",
+        "video": "https://www.youtube.com/embed/itqkIDVDC0g",
+        "description": "Cats are pets"
+    }
+]

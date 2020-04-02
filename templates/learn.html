@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+{% for letter in letters %}
+<header class="masthead">
+  <div class="container h-100">
+    <div class="row h-100">
+      {% if loop.index % 2 != 0  %}
+      <div class="col-lg-7 my-auto">
+        <div class="header-content mx-auto">
+          <h1 class="mb-5">
+            <h1>{{loop.index}}.) {{ letter.letter }}</h1>
+            <br>
+          </h1>
+          {{ letter.description }}
+          <br>
+          <a href="/learn/{{ letter.url }}" class="btn btn-outline btn-xl js-scroll-trigger">Start Learning Now!</a>
+        </div>
+      </div>
+      <div class="col-lg-5 my-auto">
+        <div class="device-container">
+
+
+
+          <!-- <div class="device-mockup iphone6_plus portrait white"> -->
+          <!-- <div class="device-mockup"></div> -->
+          <div class="device-mockup iphone6_plus portrait white">
+            <div class="device">
+              <div class="screen">
+                <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                <!-- <img src="{{ url_for('static' , filename='img/demo-screen-1.jpg') }}" class="img-fluid" alt="company demo"> -->
+                <img src="{{letter.image}}" class="img-fluid" alt="learn the alphabet">
+                <iframe width="auto" height="auto" src="{{ letter.video }}" frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="button">
+                <!-- {{ letter.description }} -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% else %}
+      <div class="col-lg-5 my-auto">
+        <div class="device-container">
+
+
+
+          <!-- <div class="device-mockup iphone6_plus portrait white"> -->
+          <!-- <div class="device-mockup"></div> -->
+          <div class="device-mockup iphone6_plus portrait white">
+            <div class="device">
+              <div class="screen">
+                <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                <!-- <img src="{{ url_for('static' , filename='img/demo-screen-1.jpg') }}" class="img-fluid" alt="company demo"> -->
+                <img src="{{letter.image}}" class="img-fluid" alt="learn the alphabet">
+                <iframe width="auto" height="auto" src="{{ letter.video }}" frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="button">
+                <!-- {{ letter.description }} -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7 my-auto">
+        <div class="header-content mx-auto">
+          <h1 class="mb-5">
+            <h1>{{loop.index}}.) {{ letter.letter }}</h1>
+            <br>
+          </h1>
+          {{ letter.description }}
+          <br>
+          <a href="/learn/{{letter.url}}" class="btn btn-outline btn-xl js-scroll-trigger">Start Learning Now!</a>
+        </div>
+      </div>
+
+      {% endif %}
+    </div>
+  </div>
+</header>
+
+
+{% endfor %}
+
+
+{% endblock %}

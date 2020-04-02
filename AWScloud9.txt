@@ -7,8 +7,10 @@ EC2 default User -FIX
 ReBuild VsCode.     
 
 from root DIR 
-  source env/bin/activate 
-  
+  source env/bin/activate   
+startbootstrap -right click FRee downloand --copy link ---wget url in dir
+
+
 
 {
   "python.pythonPath": "env\\Scripts\\python.exe",
